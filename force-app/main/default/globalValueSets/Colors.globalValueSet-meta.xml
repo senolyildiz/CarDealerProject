@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Crystal Black Pearl</fullName>
+        <default>false</default>
+        <label>Crystal Black Pearl</label>
+    </customValue>
+    <customValue>
+        <fullName>Lunar Silver Metallic</fullName>
+        <default>false</default>
+        <label>Lunar Silver Metallic</label>
+    </customValue>
+    <customValue>
+        <fullName>Modern Steel Metallic</fullName>
+        <default>false</default>
+        <label>Modern Steel Metallic</label>
+    </customValue>
+    <customValue>
+        <fullName>Obsidian Blue Pearl</fullName>
+        <default>false</default>
+        <label>Obsidian Blue Pearl</label>
+    </customValue>
+    <customValue>
+        <fullName>Pacific Pewter Metallic</fullName>
+        <default>false</default>
+        <label>Pacific Pewter Metallic</label>
+    </customValue>
+    <customValue>
+        <fullName>Platinum White Pear</fullName>
+        <default>false</default>
+        <label>Platinum White Pear</label>
+    </customValue>
+    <customValue>
+        <fullName>Radiant Red Metallic II</fullName>
+        <default>false</default>
+        <label>Radiant Red Metallic II</label>
+    </customValue>
+    <masterLabel>Colors</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>HR-V</fullName>
+        <default>false</default>
+        <label>HR-V</label>
+    </customValue>
+    <customValue>
+        <fullName>CR-V</fullName>
+        <default>false</default>
+        <label>CR-V</label>
+    </customValue>
+    <customValue>
+        <fullName>CR-V Hybrid</fullName>
+        <default>false</default>
+        <label>CR-V Hybrid</label>
+    </customValue>
+    <customValue>
+        <fullName>Pilot</fullName>
+        <default>false</default>
+        <label>Pilot</label>
+    </customValue>
+    <customValue>
+        <fullName>Passport</fullName>
+        <default>false</default>
+        <label>Passport</label>
+    </customValue>
+    <customValue>
+        <fullName>Civic Sedan</fullName>
+        <default>false</default>
+        <label>Civic Sedan</label>
+    </customValue>
+    <customValue>
+        <fullName>Accord</fullName>
+        <default>false</default>
+        <label>Accord</label>
+    </customValue>
+    <customValue>
+        <fullName>Civic Si Sedan</fullName>
+        <default>false</default>
+        <label>Civic Si Sedan</label>
+    </customValue>
+    <customValue>
+        <fullName>Accord Hybrid</fullName>
+        <default>false</default>
+        <label>Accord Hybrid</label>
+    </customValue>
+    <customValue>
+        <fullName>Civic Hatchback</fullName>
+        <default>false</default>
+        <label>Civic Hatchback</label>
+    </customValue>
+    <customValue>
+        <fullName>Civic Type R</fullName>
+        <default>false</default>
+        <label>Civic Type R</label>
+    </customValue>
+    <customValue>
+        <fullName>Odyssey</fullName>
+        <default>false</default>
+        <label>Odyssey</label>
+    </customValue>
+    <customValue>
+        <fullName>Ridgeline</fullName>
+        <default>false</default>
+        <label>Ridgeline</label>
+    </customValue>
+    <masterLabel>Vehicle Model</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

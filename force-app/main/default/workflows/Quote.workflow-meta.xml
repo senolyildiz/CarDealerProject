@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>QuoteApproved</fullName>
+        <ccEmails>senolyildiz9801@gmail.com</ccEmails>
+        <description>Quote Approved</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>info@silverlineteams.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Quote_Email_Approvel</template>
+    </alerts>
+    <alerts>
+        <fullName>Quote_Approved</fullName>
+        <description>QuoteApproved</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>info@silverlineteams.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Quote_Email_Approvel</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>An_approvel_request_was_sent</fullName>
+        <field>Status</field>
+        <literalValue>In Review</literalValue>
+        <name>An approvel request was sent</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Quote_to_Approved</fullName>
+        <field>Status</field>
+        <literalValue>Approved</literalValue>
+        <name>Quote to Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Quote_to_Rejected</fullName>
+        <field>Status</field>
+        <literalValue>Rejected</literalValue>
+        <name>Quote to Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>StatusToAccepted</fullName>
+        <field>Status</field>
+        <literalValue>Accepted</literalValue>
+        <name>StatusToAccepted</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>StatusToApproved</fullName>
+        <field>Status</field>
+        <literalValue>Approved</literalValue>
+        <name>StatusToApproved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>StatusToDenied</fullName>
+        <field>Status</field>
+        <literalValue>Denied</literalValue>
+        <name>StatusToDenied</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>StatusToDraft</fullName>
+        <field>Status</field>
+        <literalValue>Draft</literalValue>
+        <name>StatusToDraft</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_to_Approved</fullName>
+        <field>Status</field>
+        <literalValue>Approved</literalValue>
+        <name>Status to Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_to_Draft</fullName>
+        <field>Status</field>
+        <literalValue>Rejected</literalValue>
+        <name>Status to Draft</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_to_in_review</fullName>
+        <field>Status</field>
+        <literalValue>In Review</literalValue>
+        <name>Status to in review</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <tasks>
+        <fullName>A_quote_was_sent_to_approvel</fullName>
+        <assignedTo>info@silverlineteams.com</assignedTo>
+        <assignedToType>user</assignedToType>
+        <dueDateOffset>5</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>A quote was sent to approvel</subject>
+    </tasks>
+    <tasks>
+        <fullName>Modify_opp</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>Please modify this quote in 7 days and submit me again for approvel.</description>
+        <dueDateOffset>7</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>Modify opp</subject>
+    </tasks>
+    <tasks>
+        <fullName>QuoteWasRejected</fullName>
+        <assignedTo>info@silverlineteams.com</assignedTo>
+        <assignedToType>user</assignedToType>
+        <description>Please review  and modify the Quote again.</description>
+        <dueDateOffset>5</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>QuoteWasRejected</subject>
+    </tasks>
+    <tasks>
+        <fullName>Your_Quote_was_approved</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>You complete it in 3 days.</description>
+        <dueDateOffset>3</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>Your Quote was approved.</subject>
+    </tasks>
+</Workflow>
