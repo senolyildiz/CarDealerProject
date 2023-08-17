@@ -7,7 +7,9 @@ public with sharing class AssetProductControllerLWC {
             List<Asset> assAndPrdList = [SELECT Id, SerialNumber, Interior_Color__c, Exterior_Color__c, Product2.Name
                                         FROM Asset
                                         WHERE Opportunity__c = NULL];
-            try {
+           
+
+try {
                 
                 if(!assAndPrdList.isEmpty()){
                     for(Asset ap : assAndPrdList){
