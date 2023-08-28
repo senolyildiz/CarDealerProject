@@ -5,6 +5,7 @@ global class BirthdayCelebrationMail implements Database.Batchable<sObject> {
         Integer month = Date.today().month();
         String query = 'SELECT Id, LastName, FirstName, Email, Birthdate FROM Contact WHERE Email!=null AND DAY_IN_MONTH(Birthdate) = :day AND CALENDAR_MONTH(Birthdate) = :month';
         return Database.getQueryLocator(query);
+
     }
 
     global void execute(Database.BatchableContext BC, List<Contact> scope) {
