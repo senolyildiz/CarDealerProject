@@ -5,8 +5,7 @@ public class DataFactory {
        opp.Name= 'test';
        opp.CloseDate = Date.today() +2;
        opp.StageName='New';
-       
-return opp;
+       return opp;
     }
     
 }
